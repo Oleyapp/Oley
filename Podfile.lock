@@ -23,6 +23,9 @@ PODS:
   - CBZSplashView (1.0.0)
   - DZNEmptyDataSet (1.5.2)
   - IQKeyboardManager (3.2.4)
+  - RMActionController (1.0.1)
+  - RMDateSelectionViewController (2.0.0):
+    - RMActionController (~> 1.0.0)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
@@ -33,6 +36,7 @@ DEPENDENCIES:
   - CBZSplashView (~> 1.0.0)
   - DZNEmptyDataSet
   - IQKeyboardManager
+  - RMDateSelectionViewController (~> 2.0.0)
   - SDWebImage (~> 3.7)
   - SpinKit (~> 1.1)
 
@@ -41,6 +45,8 @@ SPEC CHECKSUMS:
   CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
+  RMActionController: abaeaa5386a6f9cf40873a8f617b7ac7f5ccd2d7
+  RMDateSelectionViewController: 7b76d3dce3f0b9548e9715110b4729d5af35003a
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SpinKit: 65906a8b534a4e14cbfd3f8b0b6c329131faef4a
 

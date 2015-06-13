@@ -24,6 +24,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Oleyh-RMActionController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Oleyh-RMDateSelectionViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Oleyh-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02CF075396F109C34466CE18</key>
+		<key>0BEC94D8B717F72612B3CE6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2253CBC5AD16405A123FDC71</key>
+		<key>1FA4954D55ED5828F5000240</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>852599E26409B26E1EEF1BD5</key>
+		<key>22030F54522EF8A27FD99B97</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E726AEEB8A32335EDAE31C3</key>
+		<key>2B1F954E8DF1067B8762BADA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB0E4D391142DC545627AE85</key>
+		<key>407032F6E9A73E5B682FE133</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1D5AC01E1361DE76C582030</key>
+		<key>5157A06AD37457F9DC547BC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F2013F8EA25717AA98886945</key>
+		<key>7940321A125E86A12551CBC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDD9273041B9BB7A14F10B2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0D7AE585C82082AA001D949</key>
 		<dict>
 			<key>primary</key>
 			<true/>

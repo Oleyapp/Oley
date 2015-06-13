@@ -8,6 +8,7 @@ target 'Oleyh' do
   pod 'DZNEmptyDataSet'
   pod 'CBZSplashView', '~> 1.0.0'
   pod 'SDWebImage', '~>3.7'
+  pod "RMDateSelectionViewController", "~> 2.0.0"
 end
 
 target 'OleyhTests' do
