@@ -10,4 +10,9 @@
 
 @implementation UINavigationController (KeyboardDismiss)
 
+- (BOOL)disablesAutomaticKeyboardDismissal
+{
+    return [self.topViewController disablesAutomaticKeyboardDismissal];
+}
+
 @end

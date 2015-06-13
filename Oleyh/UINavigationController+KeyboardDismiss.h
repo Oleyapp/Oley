@@ -10,4 +10,6 @@
 
 @interface UINavigationController (KeyboardDismiss)
 
+- (BOOL)disablesAutomaticKeyboardDismissal;
+
 @end
