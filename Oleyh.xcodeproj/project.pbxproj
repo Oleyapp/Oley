@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		98B9B7ED1B2C0AC40024C3A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B7EC1B2C0AC40024C3A0 /* main.m */; };
 		98B9B7F01B2C0AC40024C3A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B7EF1B2C0AC40024C3A0 /* AppDelegate.m */; };
-		98B9B7F31B2C0AC40024C3A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B7F21B2C0AC40024C3A0 /* ViewController.m */; };
 		98B9B7F61B2C0AC40024C3A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B9B7F41B2C0AC40024C3A0 /* Main.storyboard */; };
 		98B9B7F81B2C0AC40024C3A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B9B7F71B2C0AC40024C3A0 /* Images.xcassets */; };
 		98B9B7FB1B2C0AC40024C3A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B9B7F91B2C0AC40024C3A0 /* LaunchScreen.xib */; };
 		98B9B8071B2C0AC40024C3A0 /* OleyhTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B8061B2C0AC40024C3A0 /* OleyhTests.m */; };
+		98B9B8121B2C0D170024C3A0 /* OLMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B8111B2C0D170024C3A0 /* OLMainController.m */; };
+		98B9B8181B2C0D960024C3A0 /* OLMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B8171B2C0D960024C3A0 /* OLMainCell.m */; };
+		98B9B81C1B2C20290024C3A0 /* OLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B81B1B2C20290024C3A0 /* OLUser.m */; };
+		98B9B8201B2C24880024C3A0 /* OLVenueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B81F1B2C24880024C3A0 /* OLVenueController.m */; };
+		BE1991CED65E0F7304E88F10 /* libPods-Oleyh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D401757414FACC9E396F7356 /* libPods-Oleyh.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +31,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ABE84A2C8111C1F266904D5 /* Pods-Oleyh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oleyh.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oleyh/Pods-Oleyh.release.xcconfig"; sourceTree = "<group>"; };
 		98B9B7E71B2C0AC40024C3A0 /* Oleyh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oleyh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B9B7EB1B2C0AC40024C3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98B9B7EC1B2C0AC40024C3A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98B9B7EE1B2C0AC40024C3A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98B9B7EF1B2C0AC40024C3A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		98B9B7F11B2C0AC40024C3A0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		98B9B7F21B2C0AC40024C3A0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		98B9B7F51B2C0AC40024C3A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98B9B7F71B2C0AC40024C3A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		98B9B7FA1B2C0AC40024C3A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		98B9B8001B2C0AC40024C3A0 /* OleyhTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OleyhTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B9B8051B2C0AC40024C3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98B9B8061B2C0AC40024C3A0 /* OleyhTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OleyhTests.m; sourceTree = "<group>"; };
+		98B9B8101B2C0D170024C3A0 /* OLMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLMainController.h; sourceTree = "<group>"; };
+		98B9B8111B2C0D170024C3A0 /* OLMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLMainController.m; sourceTree = "<group>"; };
+		98B9B8161B2C0D960024C3A0 /* OLMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLMainCell.h; sourceTree = "<group>"; };
+		98B9B8171B2C0D960024C3A0 /* OLMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLMainCell.m; sourceTree = "<group>"; };
+		98B9B81A1B2C20290024C3A0 /* OLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLUser.h; sourceTree = "<group>"; };
+		98B9B81B1B2C20290024C3A0 /* OLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLUser.m; sourceTree = "<group>"; };
+		98B9B81E1B2C24880024C3A0 /* OLVenueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLVenueController.h; sourceTree = "<group>"; };
+		98B9B81F1B2C24880024C3A0 /* OLVenueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLVenueController.m; sourceTree = "<group>"; };
+		D401757414FACC9E396F7356 /* libPods-Oleyh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Oleyh.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E570FFF598C9F7EEDA50EE5C /* Pods-Oleyh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oleyh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oleyh/Pods-Oleyh.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1991CED65E0F7304E88F10 /* libPods-Oleyh.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212F8444927F8E721AD0AFA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E570FFF598C9F7EEDA50EE5C /* Pods-Oleyh.debug.xcconfig */,
+				2ABE84A2C8111C1F266904D5 /* Pods-Oleyh.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5BA8445F00172B8FA08BE80B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D401757414FACC9E396F7356 /* libPods-Oleyh.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98B9B7DE1B2C0AC40024C3A0 = {
 			isa = PBXGroup;
 			children = (
 				98B9B7E91B2C0AC40024C3A0 /* Oleyh */,
 				98B9B8031B2C0AC40024C3A0 /* OleyhTests */,
 				98B9B7E81B2C0AC40024C3A0 /* Products */,
+				212F8444927F8E721AD0AFA6 /* Pods */,
+				5BA8445F00172B8FA08BE80B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +116,10 @@
 			children = (
 				98B9B7EE1B2C0AC40024C3A0 /* AppDelegate.h */,
 				98B9B7EF1B2C0AC40024C3A0 /* AppDelegate.m */,
-				98B9B7F11B2C0AC40024C3A0 /* ViewController.h */,
-				98B9B7F21B2C0AC40024C3A0 /* ViewController.m */,
 				98B9B7F41B2C0AC40024C3A0 /* Main.storyboard */,
+				98B9B81D1B2C202C0024C3A0 /* Models */,
+				98B9B8151B2C0D720024C3A0 /* Views */,
+				98B9B8141B2C0D260024C3A0 /* Controllers */,
 				98B9B7F71B2C0AC40024C3A0 /* Images.xcassets */,
 				98B9B7F91B2C0AC40024C3A0 /* LaunchScreen.xib */,
 				98B9B7EA1B2C0AC40024C3A0 /* Supporting Files */,
@@ -119,6 +153,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		98B9B8131B2C0D1D0024C3A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B8101B2C0D170024C3A0 /* OLMainController.h */,
+				98B9B8111B2C0D170024C3A0 /* OLMainController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		98B9B8141B2C0D260024C3A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B8131B2C0D1D0024C3A0 /* Main */,
+				98B9B8211B2C24910024C3A0 /* Venue */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		98B9B8151B2C0D720024C3A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B8191B2C0D990024C3A0 /* Main */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		98B9B8191B2C0D990024C3A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B8161B2C0D960024C3A0 /* OLMainCell.h */,
+				98B9B8171B2C0D960024C3A0 /* OLMainCell.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		98B9B81D1B2C202C0024C3A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B81A1B2C20290024C3A0 /* OLUser.h */,
+				98B9B81B1B2C20290024C3A0 /* OLUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		98B9B8211B2C24910024C3A0 /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B81E1B2C24880024C3A0 /* OLVenueController.h */,
+				98B9B81F1B2C24880024C3A0 /* OLVenueController.m */,
+			);
+			name = Venue;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98B9B80A1B2C0AC40024C3A0 /* Build configuration list for PBXNativeTarget "Oleyh" */;
 			buildPhases = (
+				6AEA275C839B3816E2B198CB /* Check Pods Manifest.lock */,
 				98B9B7E31B2C0AC40024C3A0 /* Sources */,
 				98B9B7E41B2C0AC40024C3A0 /* Frameworks */,
 				98B9B7E51B2C0AC40024C3A0 /* Resources */,
+				C02B7716E68D072BC18062D5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +303,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6AEA275C839B3816E2B198CB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C02B7716E68D072BC18062D5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oleyh/Pods-Oleyh-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		98B9B7E31B2C0AC40024C3A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B9B7F31B2C0AC40024C3A0 /* ViewController.m in Sources */,
+				98B9B8121B2C0D170024C3A0 /* OLMainController.m in Sources */,
 				98B9B7F01B2C0AC40024C3A0 /* AppDelegate.m in Sources */,
 				98B9B7ED1B2C0AC40024C3A0 /* main.m in Sources */,
+				98B9B8181B2C0D960024C3A0 /* OLMainCell.m in Sources */,
+				98B9B8201B2C24880024C3A0 /* OLVenueController.m in Sources */,
+				98B9B81C1B2C20290024C3A0 /* OLUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +472,7 @@
 		};
 		98B9B80B1B2C0AC40024C3A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E570FFF598C9F7EEDA50EE5C /* Pods-Oleyh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Oleyh/Info.plist;
@@ -357,6 +483,7 @@
 		};
 		98B9B80C1B2C0AC40024C3A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ABE84A2C8111C1F266904D5 /* Pods-Oleyh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Oleyh/Info.plist;
@@ -418,6 +545,7 @@
 				98B9B80C1B2C0AC40024C3A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98B9B80D1B2C0AC40024C3A0 /* Build configuration list for PBXNativeTarget "OleyhTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +554,7 @@
 				98B9B80F1B2C0AC40024C3A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
