@@ -12,6 +12,9 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.logoImageView.layer.cornerRadius = self.logoImageView.frame.size.width / 2;
+    self.logoImageView.layer.borderWidth = 2;
+    self.logoImageView.layer.borderColor = [UIColor whiteColor].CGColor;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
