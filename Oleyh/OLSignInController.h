@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OLSignInController : UIViewController
+@interface OLSignInController : UIViewController <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @end
