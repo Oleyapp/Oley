@@ -23,7 +23,7 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    if (![defaults objectForKey:@"auth"]) {
+    if (![defaults objectForKey:@"token"]) {
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         NSLog(@"No previous user session: %@", [defaults objectForKey:@"auth"]);
         OLOnboardController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
