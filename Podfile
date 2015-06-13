@@ -6,6 +6,7 @@ target 'Oleyh' do
   pod 'IQKeyboardManager'
   pod 'SpinKit', '~> 1.1'
   pod 'DZNEmptyDataSet'
+  pod 'CBZSplashView', '~> 1.0.0'
 end
 
 target 'OleyhTests' do

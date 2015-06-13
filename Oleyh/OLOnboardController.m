@@ -7,6 +7,7 @@
 //
 
 #import "OLOnboardController.h"
+#import "CBZVectorSplashView.h"
 
 @interface OLOnboardController ()
 
@@ -23,6 +24,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIImage *splashImage = [UIImage imageNamed:@"LogoOutline"];
+    UIColor *splashColor = [UIColor colorWithRed:0.233 green:0.480 blue:0.858 alpha:1.000];
+    CBZSplashView *splashView = [CBZSplashView splashViewWithIcon:splashImage backgroundColor:splashColor];
+    
+    [self.view addSubview:splashView];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [splashView startAnimation];
+    });
 }
 
 - (void)didReceiveMemoryWarning {

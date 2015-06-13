@@ -20,18 +20,21 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - CBZSplashView (1.0.0)
   - DZNEmptyDataSet (1.5.2)
   - IQKeyboardManager (3.2.4)
   - SpinKit (1.2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - CBZSplashView (~> 1.0.0)
   - DZNEmptyDataSet
   - IQKeyboardManager
   - SpinKit (~> 1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
   SpinKit: 65906a8b534a4e14cbfd3f8b0b6c329131faef4a
