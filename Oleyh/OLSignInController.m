@@ -7,6 +7,7 @@
 //
 
 #import "OLSignInController.h"
+#import "AppDelegate.h"
 
 @interface OLSignInController ()
 
@@ -26,7 +27,16 @@
 
 #pragma mark - IBActions
 
+- (IBAction)signIn:(id)sender {
+    
+    AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
+    appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+
+    
+}
+
 - (IBAction)dismissView:(id)sender {
+    
     NSLog(@"Button pressed");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
