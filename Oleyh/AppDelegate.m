@@ -14,9 +14,12 @@
 
 @implementation AppDelegate
 
+#pragma mark - App Delegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setNavigationBarAppearance];
+    
     return YES;
 }
 
@@ -41,5 +44,21 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - Methods
+
+- (void)setNavigationBarAppearance {
+    if ([UINavigationBar conformsToProtocol:@protocol(UIAppearanceContainer)]) {
+        NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    [UIColor darkGrayColor], NSForegroundColorAttributeName,
+                                    [UIColor darkGrayColor], NSBackgroundColorAttributeName,
+                                    [UIFont fontWithName:@"Avenir"
+                                                    size:16],
+                                    NSFontAttributeName, nil];
+        [UINavigationBar appearance].titleTextAttributes = attributes;
+        [UINavigationBar appearance].tintColor = [UIColor colorWithRed:0.988 green:0.308 blue:0.030 alpha:1.000];
+    }
+}
+
 
 @end
