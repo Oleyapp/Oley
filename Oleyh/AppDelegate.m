@@ -65,7 +65,7 @@
         NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                     [UIColor darkGrayColor], NSForegroundColorAttributeName,
                                     [UIColor darkGrayColor], NSBackgroundColorAttributeName,
-                                    [UIFont fontWithName:@"Avenir"
+                                    [UIFont fontWithName:@"Avenir-Medium"
                                                     size:16],
                                     NSFontAttributeName, nil];
         [UINavigationBar appearance].titleTextAttributes = attributes;
