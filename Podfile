@@ -3,6 +3,7 @@
 
 target 'Oleyh' do
   pod "AFNetworking", "~> 2.0"
+  pod 'IQKeyboardManager'
 end
 
 target 'OleyhTests' do

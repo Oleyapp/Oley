@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Oleyh-IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Oleyh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>98E2301935071EC78464259E</key>
+		<key>160F4FA6F4BCC76ACAFE812B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8F1D7A5124F39D7CDC78993</key>
+		<key>5DADD4827962BA0DCBC879EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD67EC2333E350617E8B6745</key>
 		<dict>
 			<key>primary</key>
 			<true/>
