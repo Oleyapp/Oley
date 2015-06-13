@@ -34,7 +34,11 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource =self;
+    self.tableView.emptyDataSetDelegate = self;
+    self.tableView.emptyDataSetSource = self;
     
+    self.tableView.tableFooterView = [UIView new];
+
     [self getVenueRequest];
 }
 
@@ -96,6 +100,20 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+#pragma mark - DZNEmptyDataSet Data Source
+
+- (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state {
+    NSDictionary *attributes = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:17.0]};
+    
+    return [[NSAttributedString alloc] initWithString:@"Refresh" attributes:attributes];
+}
+
+- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView {
+    RTSpinKitView *spinner = [[RTSpinKitView alloc] initWithStyle:RTSpinKitViewStylePulse
+                                                            color:[UIColor colorWithRed:0.233 green:0.480 blue:0.858 alpha:1.000]];
+    return spinner;
+}
+
 #pragma mark - Methods
 
 - (void)getVenueRequest {
@@ -103,7 +121,7 @@
     NSDictionary *parameters = @{};
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://192.168.2.1:8000/api/v1/courts" parameters:parameters
+    [manager GET:@"http://192.168.2.1:8000/api/player/v1/courts" parameters:parameters
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              NSLog(@"Response: %@", responseObject);
              

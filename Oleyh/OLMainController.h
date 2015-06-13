@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIScrollView+EmptyDataSet.h"
+#import <SpinKit/RTSpinKitView.h>
 
-@interface OLMainController : UITableViewController
+@interface OLMainController : UITableViewController <DZNEmptyDataSetDelegate, DZNEmptyDataSetSource>
 
 @end
