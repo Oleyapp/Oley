@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Oleyh-DZNEmptyDataSet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Oleyh-IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Oleyh-SpinKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>160F4FA6F4BCC76ACAFE812B</key>
+		<key>41FE53690227DEDF05B84455</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5DADD4827962BA0DCBC879EF</key>
+		<key>71081D0AE933724952A1A099</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD67EC2333E350617E8B6745</key>
+		<key>AE8B3527E7FF29D0222634E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6E9F66AAAFB44737B1F8EC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F699DE9CB09531AC78D7EA9B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

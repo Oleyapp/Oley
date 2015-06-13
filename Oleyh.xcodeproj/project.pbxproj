@@ -17,6 +17,11 @@
 		98B9B8181B2C0D960024C3A0 /* OLMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B8171B2C0D960024C3A0 /* OLMainCell.m */; };
 		98B9B81C1B2C20290024C3A0 /* OLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B81B1B2C20290024C3A0 /* OLUser.m */; };
 		98B9B8201B2C24880024C3A0 /* OLVenueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B81F1B2C24880024C3A0 /* OLVenueController.m */; };
+		98B9B8251B2C32680024C3A0 /* OLSignInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B8241B2C32680024C3A0 /* OLSignInController.m */; };
+		98B9B8291B2C32A20024C3A0 /* OLSignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B8281B2C32A20024C3A0 /* OLSignUpController.m */; };
+		98B9B82C1B2C46620024C3A0 /* OLOnboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B82B1B2C46620024C3A0 /* OLOnboardController.m */; };
+		98B9B8341B2C64B90024C3A0 /* UINavigationController+KeyboardDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B8331B2C64B90024C3A0 /* UINavigationController+KeyboardDismiss.m */; };
+		98B9B8371B2C6C140024C3A0 /* OLProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B8361B2C6C140024C3A0 /* OLProfileController.m */; };
 		BE1991CED65E0F7304E88F10 /* libPods-Oleyh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D401757414FACC9E396F7356 /* libPods-Oleyh.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +56,16 @@
 		98B9B81B1B2C20290024C3A0 /* OLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLUser.m; sourceTree = "<group>"; };
 		98B9B81E1B2C24880024C3A0 /* OLVenueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLVenueController.h; sourceTree = "<group>"; };
 		98B9B81F1B2C24880024C3A0 /* OLVenueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLVenueController.m; sourceTree = "<group>"; };
+		98B9B8231B2C32680024C3A0 /* OLSignInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLSignInController.h; sourceTree = "<group>"; };
+		98B9B8241B2C32680024C3A0 /* OLSignInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLSignInController.m; sourceTree = "<group>"; };
+		98B9B8271B2C32A20024C3A0 /* OLSignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLSignUpController.h; sourceTree = "<group>"; };
+		98B9B8281B2C32A20024C3A0 /* OLSignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLSignUpController.m; sourceTree = "<group>"; };
+		98B9B82A1B2C46620024C3A0 /* OLOnboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLOnboardController.h; sourceTree = "<group>"; };
+		98B9B82B1B2C46620024C3A0 /* OLOnboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLOnboardController.m; sourceTree = "<group>"; };
+		98B9B8321B2C64B90024C3A0 /* UINavigationController+KeyboardDismiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+KeyboardDismiss.h"; sourceTree = "<group>"; };
+		98B9B8331B2C64B90024C3A0 /* UINavigationController+KeyboardDismiss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+KeyboardDismiss.m"; sourceTree = "<group>"; };
+		98B9B8351B2C6C140024C3A0 /* OLProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLProfileController.h; sourceTree = "<group>"; };
+		98B9B8361B2C6C140024C3A0 /* OLProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLProfileController.m; sourceTree = "<group>"; };
 		D401757414FACC9E396F7356 /* libPods-Oleyh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Oleyh.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E570FFF598C9F7EEDA50EE5C /* Pods-Oleyh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oleyh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oleyh/Pods-Oleyh.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +132,7 @@
 				98B9B7EE1B2C0AC40024C3A0 /* AppDelegate.h */,
 				98B9B7EF1B2C0AC40024C3A0 /* AppDelegate.m */,
 				98B9B7F41B2C0AC40024C3A0 /* Main.storyboard */,
+				98B9B82E1B2C64190024C3A0 /* Categories */,
 				98B9B81D1B2C202C0024C3A0 /* Models */,
 				98B9B8151B2C0D720024C3A0 /* Views */,
 				98B9B8141B2C0D260024C3A0 /* Controllers */,
@@ -165,8 +181,12 @@
 		98B9B8141B2C0D260024C3A0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				98B9B82D1B2C46D30024C3A0 /* Onboard */,
+				98B9B8261B2C327A0024C3A0 /* Sign Up */,
+				98B9B8221B2C32490024C3A0 /* Sign In */,
 				98B9B8131B2C0D1D0024C3A0 /* Main */,
 				98B9B8211B2C24910024C3A0 /* Venue */,
+				98B9B8381B2C7C500024C3A0 /* Profile */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +224,51 @@
 				98B9B81F1B2C24880024C3A0 /* OLVenueController.m */,
 			);
 			name = Venue;
+			sourceTree = "<group>";
+		};
+		98B9B8221B2C32490024C3A0 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B8231B2C32680024C3A0 /* OLSignInController.h */,
+				98B9B8241B2C32680024C3A0 /* OLSignInController.m */,
+			);
+			name = "Sign In";
+			sourceTree = "<group>";
+		};
+		98B9B8261B2C327A0024C3A0 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B8271B2C32A20024C3A0 /* OLSignUpController.h */,
+				98B9B8281B2C32A20024C3A0 /* OLSignUpController.m */,
+			);
+			name = "Sign Up";
+			sourceTree = "<group>";
+		};
+		98B9B82D1B2C46D30024C3A0 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B82A1B2C46620024C3A0 /* OLOnboardController.h */,
+				98B9B82B1B2C46620024C3A0 /* OLOnboardController.m */,
+			);
+			name = Onboard;
+			sourceTree = "<group>";
+		};
+		98B9B82E1B2C64190024C3A0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B8321B2C64B90024C3A0 /* UINavigationController+KeyboardDismiss.h */,
+				98B9B8331B2C64B90024C3A0 /* UINavigationController+KeyboardDismiss.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		98B9B8381B2C7C500024C3A0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				98B9B8351B2C6C140024C3A0 /* OLProfileController.h */,
+				98B9B8361B2C6C140024C3A0 /* OLProfileController.m */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,10 +406,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B9B82C1B2C46620024C3A0 /* OLOnboardController.m in Sources */,
+				98B9B8341B2C64B90024C3A0 /* UINavigationController+KeyboardDismiss.m in Sources */,
 				98B9B8121B2C0D170024C3A0 /* OLMainController.m in Sources */,
 				98B9B7F01B2C0AC40024C3A0 /* AppDelegate.m in Sources */,
+				98B9B8371B2C6C140024C3A0 /* OLProfileController.m in Sources */,
 				98B9B7ED1B2C0AC40024C3A0 /* main.m in Sources */,
 				98B9B8181B2C0D960024C3A0 /* OLMainCell.m in Sources */,
+				98B9B8291B2C32A20024C3A0 /* OLSignUpController.m in Sources */,
+				98B9B8251B2C32680024C3A0 /* OLSignInController.m in Sources */,
 				98B9B8201B2C24880024C3A0 /* OLVenueController.m in Sources */,
 				98B9B81C1B2C20290024C3A0 /* OLUser.m in Sources */,
 			);
