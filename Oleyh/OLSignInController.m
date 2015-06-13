@@ -9,6 +9,8 @@
 #import "OLSignInController.h"
 #import "AppDelegate.h"
 
+#import "AFNetworking.h"
+
 @interface OLSignInController ()
 
 @end
@@ -36,11 +38,29 @@
     
     if (self.emailTextField.text && self.passwordTextField.text &&
         [self.emailTextField.text length] > 0 && [self.passwordTextField.text length] > 0) {
-        [self.emailTextField resignFirstResponder];
-        [self.passwordTextField resignFirstResponder];
-
-        AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
-        appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+        NSDictionary *parameters = @{
+                                     @"email":self.emailTextField.text,
+                                     @"password":self.passwordTextField.text
+                                     };
+        
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        [manager POST:@"http://192.168.2.1:8000/api/player/v1/login" parameters:parameters
+              success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                  NSLog(@"Response: %@", responseObject);
+                  
+                  [self.emailTextField resignFirstResponder];
+                  [self.passwordTextField resignFirstResponder];
+                  
+                  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                  [defaults setObject:[responseObject valueForKey:@"token"] forKey:@"token"];
+                  [defaults synchronize];
+                  
+                  AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
+                  appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+                
+              } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                  NSLog(@"Error: %@", error.description);
+              }];
     }
 }
 
@@ -49,6 +69,5 @@
     NSLog(@"Button pressed");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
 
 @end

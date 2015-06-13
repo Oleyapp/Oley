@@ -7,6 +7,7 @@
 //
 
 #import "OLSignUpController.h"
+#import "AFNetworking.h"
 #import "AppDelegate.h"
 
 @interface OLSignUpController ()
@@ -31,12 +32,31 @@
     
     if (self.nameTextField && self.emailTextField && self.passwordTextField && [self.nameTextField.text length] > 0 && [self.emailTextField.text length] > 0 && [self.passwordTextField.text length] > 0) {
         
-        [self.nameTextField resignFirstResponder];
-        [self.emailTextField resignFirstResponder];
-        [self.passwordTextField resignFirstResponder];
+        NSDictionary *parameters = @{
+                                     @"name":self.nameTextField.text,
+                                     @"email":self.emailTextField.text,
+                                     @"password":self.passwordTextField.text
+                                     };
         
-        AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
-        appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        [manager POST:@"http://192.168.2.1:8000/api/player/v1/register" parameters:parameters
+              success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                  NSLog(@"Response: %@", responseObject);
+                  
+                  [self.nameTextField resignFirstResponder];
+                  [self.emailTextField resignFirstResponder];
+                  [self.passwordTextField resignFirstResponder];
+                  
+                  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                  [defaults setObject:[responseObject valueForKey:@"token"] forKey:@"token"];
+                  [defaults synchronize];
+                  
+                  AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
+                  appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+
+              } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                  NSLog(@"Error: %@", error.description);
+              }];
     }
     
    
