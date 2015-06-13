@@ -10,4 +10,15 @@
 
 @interface OLVenueController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (strong, nonatomic) NSString *address;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *backgroundImageUrl;
+@property (strong, nonatomic) NSString *logoImageUrl;
+@property (strong, nonatomic) NSString *tagline;
+@property (strong, nonatomic) NSNumber *venueId;
+
 @end

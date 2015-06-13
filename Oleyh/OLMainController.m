@@ -101,7 +101,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    NSDictionary *venue = [self.venues objectAtIndex:indexPath.row];
+    
     OLVenueController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"venue"];
+    
+    vc.address = [venue valueForKey:@"address"];
+    vc.name = [venue valueForKey:@"name"];
+    vc.backgroundImageUrl = [venue valueForKey:@"background_image"];
+    vc.logoImageUrl = [venue valueForKey:@"logo_image"];
+    vc.tagline = [venue valueForKey:@"tagline"];
+    vc.venueId = [venue valueForKey:@"id"];
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
