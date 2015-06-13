@@ -65,13 +65,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    OLMainCell *cell = (OLMainCell *)[tableView dequeueReusableCellWithIdentifier:@"main_cell"];
+    NSDictionary *venue = [self.venues objectAtIndex:indexPath.row];
     
+    OLMainCell *cell = (OLMainCell *)[tableView dequeueReusableCellWithIdentifier:@"main_cell"];
     if (!cell) {
         cell = [[OLMainCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"main_cell"];
     }
     
-    cell.nameLabel.text = @"This is such a long venue name, Bangi";
+    cell.nameLabel.text = [venue valueForKey:@"name"];
     cell.descriptionLabel.text = @"Venue description";
     
     return cell;
@@ -93,6 +94,10 @@
 }
 
 #pragma mark - UITableView Delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 230;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
