@@ -23,6 +23,9 @@ PODS:
   - CBZSplashView (1.0.0)
   - DZNEmptyDataSet (1.5.2)
   - IQKeyboardManager (3.2.4)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
   - SpinKit (1.2.0)
 
 DEPENDENCIES:
@@ -30,6 +33,7 @@ DEPENDENCIES:
   - CBZSplashView (~> 1.0.0)
   - DZNEmptyDataSet
   - IQKeyboardManager
+  - SDWebImage (~> 3.7)
   - SpinKit (~> 1.1)
 
 SPEC CHECKSUMS:
@@ -37,6 +41,7 @@ SPEC CHECKSUMS:
   CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SpinKit: 65906a8b534a4e14cbfd3f8b0b6c329131faef4a
 
 COCOAPODS: 0.35.0

@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Oleyh-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Oleyh-SpinKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>60C09CDFBC964AFC7AA29437</key>
+		<key>02CF075396F109C34466CE18</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>703D8F1B88097A95C73A645B</key>
+		<key>2253CBC5AD16405A123FDC71</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>729260A06DF672D6FC6639AA</key>
+		<key>852599E26409B26E1EEF1BD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D41CAA397F13154E9E6F38A</key>
+		<key>8E726AEEB8A32335EDAE31C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA13A9E8E17CA2E9E1EBBD32</key>
+		<key>BB0E4D391142DC545627AE85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E7B3C09FD9174E8C4158687E</key>
+		<key>F1D5AC01E1361DE76C582030</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2013F8EA25717AA98886945</key>
 		<dict>
 			<key>primary</key>
 			<true/>

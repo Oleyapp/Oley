@@ -7,6 +7,7 @@ target 'Oleyh' do
   pod 'SpinKit', '~> 1.1'
   pod 'DZNEmptyDataSet'
   pod 'CBZSplashView', '~> 1.0.0'
+  pod 'SDWebImage', '~>3.7'
 end
 
 target 'OleyhTests' do
