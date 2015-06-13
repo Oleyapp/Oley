@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OLOnboardController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self setNavigationBarAppearance];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults objectForKey:@"auth"]) {
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        NSLog(@"No previous user session: %@", [defaults objectForKey:@"auth"]);
+        OLOnboardController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
+                                   instantiateViewControllerWithIdentifier:@"onboard"];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+    }
     
     return YES;
 }
