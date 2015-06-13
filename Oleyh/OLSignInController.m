@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.emailTextField.delegate = self;
+    self.passwordTextField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +27,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+}
+
 #pragma mark - IBActions
 
 - (IBAction)signIn:(id)sender {
     
-    AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
-    appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    if (self.emailTextField.text && self.passwordTextField.text &&
+        [self.emailTextField.text length] > 0 && [self.passwordTextField.text length] > 0) {
+        [self.emailTextField resignFirstResponder];
+        [self.passwordTextField resignFirstResponder];
 
-    
+        AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
+        appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    }
 }
 
 - (IBAction)dismissView:(id)sender {
