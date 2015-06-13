@@ -69,7 +69,7 @@
                                                     size:16],
                                     NSFontAttributeName, nil];
         [UINavigationBar appearance].titleTextAttributes = attributes;
-        [UINavigationBar appearance].tintColor = [UIColor colorWithRed:0.988 green:0.308 blue:0.030 alpha:1.000];
+        [UINavigationBar appearance].tintColor = [UIColor colorWithRed:0.270 green:0.793 blue:0.709 alpha:1.000];
     }
 }
 
