@@ -30,6 +30,7 @@ PODS:
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
   - SpinKit (1.2.0)
+  - UIImageView-Letters (1.1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - RMDateSelectionViewController (~> 2.0.0)
   - SDWebImage (~> 3.7)
   - SpinKit (~> 1.1)
+  - UIImageView-Letters
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -49,5 +51,6 @@ SPEC CHECKSUMS:
   RMDateSelectionViewController: 7b76d3dce3f0b9548e9715110b4729d5af35003a
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SpinKit: 65906a8b534a4e14cbfd3f8b0b6c329131faef4a
+  UIImageView-Letters: c14e01ab0e2e811aee171435b5fdf49b0ee7c970
 
 COCOAPODS: 0.35.0

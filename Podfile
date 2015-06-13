@@ -9,6 +9,7 @@ target 'Oleyh' do
   pod 'CBZSplashView', '~> 1.0.0'
   pod 'SDWebImage', '~>3.7'
   pod "RMDateSelectionViewController", "~> 2.0.0"
+  pod "UIImageView-Letters"
 end
 
 target 'OleyhTests' do

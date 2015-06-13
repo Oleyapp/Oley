@@ -7,6 +7,7 @@
 //
 
 #import "OLProfileController.h"
+#import "UIImageView+Letters.h"
 
 @interface OLProfileController ()
 
@@ -20,6 +21,7 @@
     [super viewDidLoad];
     
     self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
+    [self.profileImageView setImageWithString:@"Faiz Mokhtar" color:[UIColor grayColor] circular:YES];
 }
 
 - (void)didReceiveMemoryWarning {

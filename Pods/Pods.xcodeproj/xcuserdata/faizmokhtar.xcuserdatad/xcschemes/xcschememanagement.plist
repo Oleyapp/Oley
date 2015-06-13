@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Oleyh-UIImageView-Letters.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Oleyh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0BEC94D8B717F72612B3CE6B</key>
+		<key>01FDC2B5F237694118D4E817</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FA4954D55ED5828F5000240</key>
+		<key>3B5F562CE84832F6D6019ABE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22030F54522EF8A27FD99B97</key>
+		<key>3C179A23583B08480E180378</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B1F954E8DF1067B8762BADA</key>
+		<key>6B36526CB1874AB0630541F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>407032F6E9A73E5B682FE133</key>
+		<key>75409FD0AF8BE2D02A3F6BCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5157A06AD37457F9DC547BC6</key>
+		<key>AA57491B256809868C529FAD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7940321A125E86A12551CBC9</key>
+		<key>C32079287B9E29806361484F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DDD9273041B9BB7A14F10B2A</key>
+		<key>CBCF1B133F62793F9BE754D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F0D7AE585C82082AA001D949</key>
+		<key>D51C2E5C69BC92A20760FACE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5FE6E4C07956AE719D10BBF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
