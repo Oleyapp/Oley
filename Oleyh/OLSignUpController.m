@@ -28,8 +28,18 @@
 #pragma mark - IBActions
 
 - (IBAction)signUp:(id)sender {
-    AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
-    appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    
+    if (self.nameTextField && self.emailTextField && self.passwordTextField && [self.nameTextField.text length] > 0 && [self.emailTextField.text length] > 0 && [self.passwordTextField.text length] > 0) {
+        
+        [self.nameTextField resignFirstResponder];
+        [self.emailTextField resignFirstResponder];
+        [self.passwordTextField resignFirstResponder];
+        
+        AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
+        appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    }
+    
+   
 
 }
 
