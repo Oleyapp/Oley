@@ -10,4 +10,6 @@
 
 @interface OLBookView : UIView
 
+@property (weak, nonatomic) IBOutlet UIButton *bookButton;
+
 @end

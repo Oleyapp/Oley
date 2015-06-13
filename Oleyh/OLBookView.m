@@ -10,12 +10,10 @@
 
 @implementation OLBookView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+#pragma mark - IBActions
+
+- (IBAction)bookVenue:(id)sender {
+    NSLog(@"Button pressed");
 }
-*/
 
 @end
