@@ -8,7 +8,12 @@
 
 #import "OLMainController.h"
 #import "OLVenueController.h"
+#import "OLProfileController.h"
 #import "OLMainCell.h"
+
+#import "AFNetworking.h"
+
+#import "UINavigationController+KeyboardDismiss.h"
 
 @interface OLMainController ()
 
@@ -27,10 +32,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.venues = @[@"1", @"2", @"3", @"3", @"3"];
-    
     self.tableView.delegate = self;
     self.tableView.dataSource =self;
+    
+    [self getVenueRequest];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -62,7 +67,7 @@
         cell = [[OLMainCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"main_cell"];
     }
     
-    cell.nameLabel.text = @"Venue name";
+    cell.nameLabel.text = @"This is such a long venue name, Bangi";
     cell.descriptionLabel.text = @"Venue description";
     
     return cell;
@@ -89,6 +94,37 @@
     
     OLVenueController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"venue"];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - Methods
+
+- (void)getVenueRequest {
+    
+    NSDictionary *parameters = @{};
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"http://192.168.2.1:8000/api/v1/courts" parameters:parameters
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSLog(@"Response: %@", responseObject);
+             
+             if ([responseObject isKindOfClass:[NSArray class]]) {
+                 self.venues = responseObject;
+             }
+             
+             [self.tableView reloadData];
+             
+         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             // Handle errors
+         }];
+}
+
+#pragma mark - IBActions
+
+- (IBAction)viewProfile:(id)sender {
+    
+    OLProfileController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"profile"];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 @end
