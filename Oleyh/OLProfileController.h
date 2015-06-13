@@ -10,4 +10,7 @@
 
 @interface OLProfileController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
 @end
