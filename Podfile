@@ -4,6 +4,8 @@
 target 'Oleyh' do
   pod "AFNetworking", "~> 2.0"
   pod 'IQKeyboardManager'
+  pod 'SpinKit', '~> 1.1'
+  pod 'DZNEmptyDataSet'
 end
 
 target 'OleyhTests' do
