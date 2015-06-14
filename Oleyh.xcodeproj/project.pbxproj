@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98AF3CF01B2CD0F200034C91 /* OLBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AF3CEF1B2CD0F200034C91 /* OLBookView.m */; };
+		98AF3CF21B2CD10300034C91 /* OLBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98AF3CF11B2CD10300034C91 /* OLBookView.xib */; };
 		98B9B7ED1B2C0AC40024C3A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B7EC1B2C0AC40024C3A0 /* main.m */; };
 		98B9B7F01B2C0AC40024C3A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B9B7EF1B2C0AC40024C3A0 /* AppDelegate.m */; };
 		98B9B7F61B2C0AC40024C3A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B9B7F41B2C0AC40024C3A0 /* Main.storyboard */; };
@@ -37,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		2ABE84A2C8111C1F266904D5 /* Pods-Oleyh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oleyh.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oleyh/Pods-Oleyh.release.xcconfig"; sourceTree = "<group>"; };
+		98AF3CEE1B2CD0F200034C91 /* OLBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLBookView.h; sourceTree = "<group>"; };
+		98AF3CEF1B2CD0F200034C91 /* OLBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLBookView.m; sourceTree = "<group>"; };
+		98AF3CF11B2CD10300034C91 /* OLBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OLBookView.xib; sourceTree = "<group>"; };
 		98B9B7E71B2C0AC40024C3A0 /* Oleyh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oleyh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B9B7EB1B2C0AC40024C3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98B9B7EC1B2C0AC40024C3A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +109,16 @@
 				D401757414FACC9E396F7356 /* libPods-Oleyh.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98AF3CED1B2CD0C800034C91 /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+				98AF3CEE1B2CD0F200034C91 /* OLBookView.h */,
+				98AF3CEF1B2CD0F200034C91 /* OLBookView.m */,
+				98AF3CF11B2CD10300034C91 /* OLBookView.xib */,
+			);
+			name = Venue;
 			sourceTree = "<group>";
 		};
 		98B9B7DE1B2C0AC40024C3A0 = {
@@ -194,6 +209,7 @@
 		98B9B8151B2C0D720024C3A0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				98AF3CED1B2CD0C800034C91 /* Venue */,
 				98B9B8191B2C0D990024C3A0 /* Main */,
 			);
 			name = Views;
@@ -353,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AF3CF21B2CD10300034C91 /* OLBookView.xib in Resources */,
 				98B9B7F61B2C0AC40024C3A0 /* Main.storyboard in Resources */,
 				98B9B7FB1B2C0AC40024C3A0 /* LaunchScreen.xib in Resources */,
 				98B9B7F81B2C0AC40024C3A0 /* Images.xcassets in Resources */,
@@ -410,6 +427,7 @@
 				98B9B8341B2C64B90024C3A0 /* UINavigationController+KeyboardDismiss.m in Sources */,
 				98B9B8121B2C0D170024C3A0 /* OLMainController.m in Sources */,
 				98B9B7F01B2C0AC40024C3A0 /* AppDelegate.m in Sources */,
+				98AF3CF01B2CD0F200034C91 /* OLBookView.m in Sources */,
 				98B9B8371B2C6C140024C3A0 /* OLProfileController.m in Sources */,
 				98B9B7ED1B2C0AC40024C3A0 /* main.m in Sources */,
 				98B9B8181B2C0D960024C3A0 /* OLMainCell.m in Sources */,
