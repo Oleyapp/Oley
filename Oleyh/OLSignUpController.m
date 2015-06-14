@@ -50,12 +50,11 @@
                   [self.emailTextField resignFirstResponder];
                   [self.passwordTextField resignFirstResponder];
                   
-                  
                   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-                  
-                  NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[responseObject valueForKey:@""]];
-                  
                   [defaults setObject:[responseObject valueForKey:@"token"] forKey:@"token"];
+                  [defaults setObject:responseObject[@"account"][@"email"] forKey:@"email"];
+                  [defaults setObject:responseObject[@"account"][@"name"] forKey:@"name"];
+                  [defaults setObject:responseObject[@"account"][@"id"] forKey:@"user_id"];
                   [defaults synchronize];
                   
                   AppDelegate *appDelegateTemp = [[UIApplication sharedApplication] delegate];
