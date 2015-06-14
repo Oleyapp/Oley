@@ -11,6 +11,7 @@ target 'Oleyh' do
   pod "RMDateSelectionViewController", "~> 2.0.0"
   pod "UIImageView-Letters"
   pod 'CNPPopupController'
+  pod 'SVProgressHUD'
 end
 
 target 'OleyhTests' do

@@ -8,7 +8,7 @@
 
 #import "OLSignInController.h"
 #import "AppDelegate.h"
-
+#import "SVProgressHUD.h"
 #import "AFNetworking.h"
 
 @interface OLSignInController ()
@@ -43,10 +43,12 @@
                                      @"password":self.passwordTextField.text
                                      };
         
+        [SVProgressHUD show];
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         [manager POST:@"http://192.168.2.1:8000/api/player/v1/login" parameters:parameters
               success:^(AFHTTPRequestOperation *operation, id responseObject) {
                   NSLog(@"Response: %@", responseObject);
+                  [SVProgressHUD dismiss];
                   
                   [self.emailTextField resignFirstResponder];
                   [self.passwordTextField resignFirstResponder];
@@ -60,6 +62,12 @@
                 
               } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                   NSLog(@"Error: %@", error.description);
+                  [SVProgressHUD dismiss];
+                  [[[UIAlertView alloc] initWithTitle:@"Aww shucks, an error occured."
+                                              message:@"There seems's to be an error with the application."
+                                             delegate:self
+                                    cancelButtonTitle:@"OK"
+                                    otherButtonTitles:nil] show];
               }];
     }
 }

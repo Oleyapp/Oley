@@ -11,6 +11,7 @@
 #import "RMDateSelectionViewController.h"
 #import "CNPPopUpController.h"
 #import "AFNetworking.h"
+#import "SVProgressHUD.h"
 
 @interface OLVenueController ()
 
@@ -209,16 +210,20 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
+    [SVProgressHUD show];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager POST:[NSString stringWithFormat:@"http://192.168.2.1:8000/api/player/v1/book?token=%@", [defaults valueForKey:@"token"]]
        parameters:parameters
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               NSLog(@"Response: %@", responseObject);
+              [SVProgressHUD dismiss];
               
               [self showPopupSuccessWithStyle:CNPPopupStyleCentered];
               
           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"Error: %@", error);
+              [SVProgressHUD dismiss];
+              
               [self showPopupFailedWithStyle:CNPPopupStyleCentered];
 
           }];

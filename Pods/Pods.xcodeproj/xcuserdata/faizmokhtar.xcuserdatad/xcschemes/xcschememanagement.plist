@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Oleyh-SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Oleyh-SpinKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,57 +67,62 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>362535A6B37FD2E7A39D1A31</key>
+		<key>05342D51EA293491A4369625</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39367A4BB2C7B13F8F450C16</key>
+		<key>0B2F93CC735F07BBADD8AB26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DA898772FFAC81E92D9F7D3</key>
+		<key>12E8BD6F54A45605DE5976CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4AC98F9FA7B50C6D30A2A035</key>
+		<key>1B58BA153D0CFF102AC76EC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E795B66B89428DE386063C3</key>
+		<key>28BE3F45A8F996E84502D6FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AF5F08B59806B54F58EAE04</key>
+		<key>2E3A983B17D2CF96A6A82972</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5B0DF742060F07DE1F5842C</key>
+		<key>38D0CA4509D546D579DA58E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ACBC1089E51C0665A0FFA4F9</key>
+		<key>4D30304C0101D20D5718B50F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E1D65BE322B0B99C52B9AED5</key>
+		<key>89CDFFF2F7686B42CDED5A8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F5E891910981FB3F44F0A266</key>
+		<key>BD55BAB144FC4C064E22EF19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FEF020BC0B0E0F56FBF77784</key>
+		<key>C54738D14B8E609AC155951A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7D4EA64376A0CBAB23B5083</key>
 		<dict>
 			<key>primary</key>
 			<true/>
