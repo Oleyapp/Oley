@@ -139,7 +139,7 @@
     NSDictionary *parameters = @{};
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://192.168.2.1:8000/api/player/v1/courts" parameters:parameters
+    [manager GET:@"http://oleyapp.ml/api/player/v1/courts" parameters:parameters
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              NSLog(@"Response: %@", responseObject);
              

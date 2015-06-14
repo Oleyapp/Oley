@@ -41,7 +41,7 @@
         
         [SVProgressHUD show];
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-        [manager POST:@"http://192.168.2.1:8000/api/player/v1/register" parameters:parameters
+        [manager POST:@"http://oleyapp.ml/api/player/v1/register" parameters:parameters
               success:^(AFHTTPRequestOperation *operation, id responseObject) {
                   NSLog(@"Response: %@", responseObject);
                   [SVProgressHUD dismiss];
@@ -50,7 +50,11 @@
                   [self.emailTextField resignFirstResponder];
                   [self.passwordTextField resignFirstResponder];
                   
+                  
                   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                  
+                  NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[responseObject valueForKey:@""]];
+                  
                   [defaults setObject:[responseObject valueForKey:@"token"] forKey:@"token"];
                   [defaults synchronize];
                   

@@ -45,7 +45,7 @@
         
         [SVProgressHUD show];
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-        [manager POST:@"http://192.168.2.1:8000/api/player/v1/login" parameters:parameters
+        [manager POST:@"http://oleyapp.ml/api/player/v1/login" parameters:parameters
               success:^(AFHTTPRequestOperation *operation, id responseObject) {
                   NSLog(@"Response: %@", responseObject);
                   [SVProgressHUD dismiss];

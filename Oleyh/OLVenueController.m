@@ -212,7 +212,7 @@
     
     [SVProgressHUD show];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager POST:[NSString stringWithFormat:@"http://192.168.2.1:8000/api/player/v1/book?token=%@", [defaults valueForKey:@"token"]]
+    [manager POST:[NSString stringWithFormat:@"http://oleyapp.ml/api/player/v1/book?token=%@", [defaults valueForKey:@"token"]]
        parameters:parameters
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               NSLog(@"Response: %@", responseObject);
