@@ -102,7 +102,7 @@
         dateSelectionController.title = @"until when?";
     }
     
-    dateSelectionController.message = @"This is a test message.\nPlease choose a date and press 'Select' or 'Cancel'.";
+    dateSelectionController.message = @"Please choose a date and press 'Select' or 'Cancel'.";
 
     [self presentViewController:dateSelectionController animated:YES completion:nil];
 }
