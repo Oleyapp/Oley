@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Oleyh-CNPPopupController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Oleyh-DZNEmptyDataSet.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,52 +62,57 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01FDC2B5F237694118D4E817</key>
+		<key>362535A6B37FD2E7A39D1A31</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3B5F562CE84832F6D6019ABE</key>
+		<key>39367A4BB2C7B13F8F450C16</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C179A23583B08480E180378</key>
+		<key>3DA898772FFAC81E92D9F7D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6B36526CB1874AB0630541F1</key>
+		<key>4AC98F9FA7B50C6D30A2A035</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>75409FD0AF8BE2D02A3F6BCD</key>
+		<key>5E795B66B89428DE386063C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA57491B256809868C529FAD</key>
+		<key>6AF5F08B59806B54F58EAE04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C32079287B9E29806361484F</key>
+		<key>A5B0DF742060F07DE1F5842C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBCF1B133F62793F9BE754D3</key>
+		<key>ACBC1089E51C0665A0FFA4F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D51C2E5C69BC92A20760FACE</key>
+		<key>E1D65BE322B0B99C52B9AED5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E5FE6E4C07956AE719D10BBF</key>
+		<key>F5E891910981FB3F44F0A266</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEF020BC0B0E0F56FBF77784</key>
 		<dict>
 			<key>primary</key>
 			<true/>

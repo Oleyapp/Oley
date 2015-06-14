@@ -10,6 +10,7 @@ target 'Oleyh' do
   pod 'SDWebImage', '~>3.7'
   pod "RMDateSelectionViewController", "~> 2.0.0"
   pod "UIImageView-Letters"
+  pod 'CNPPopupController'
 end
 
 target 'OleyhTests' do

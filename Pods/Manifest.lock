@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CBZSplashView (1.0.0)
+  - CNPPopupController (0.1.2)
   - DZNEmptyDataSet (1.5.2)
   - IQKeyboardManager (3.2.4)
   - RMActionController (1.0.1)
@@ -35,6 +36,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - CBZSplashView (~> 1.0.0)
+  - CNPPopupController
   - DZNEmptyDataSet
   - IQKeyboardManager
   - RMDateSelectionViewController (~> 2.0.0)
@@ -45,6 +47,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   CBZSplashView: 9ce4cba22024476ff4a97d6433e7347da6376016
+  CNPPopupController: 8ce4ccd90287320aaa716c7c06caabda31b844ed
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
   RMActionController: abaeaa5386a6f9cf40873a8f617b7ac7f5ccd2d7
