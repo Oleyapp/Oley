@@ -73,7 +73,10 @@
     }
     
     cell.nameLabel.text = [venue valueForKey:@"name"];
-    cell.descriptionLabel.text = @"Venue description";
+    cell.descriptionLabel.text = [venue valueForKey:@"tagline"];
+    [cell.backgroundImageView sd_setImageWithURL:[NSURL URLWithString:[venue valueForKey:@"background_image"]] placeholderImage:nil];
+    [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:[venue valueForKey:@"logo_image"]] placeholderImage:nil];
+
     
     return cell;
 }
@@ -96,7 +99,7 @@
 #pragma mark - UITableView Delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 230;
+    return 210;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIScrollView+EmptyDataSet.h"
 #import <SpinKit/RTSpinKitView.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface OLMainController : UITableViewController <DZNEmptyDataSetDelegate, DZNEmptyDataSetSource>
 
