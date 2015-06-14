@@ -74,8 +74,23 @@
     
     cell.nameLabel.text = [venue valueForKey:@"name"];
     cell.descriptionLabel.text = [venue valueForKey:@"tagline"];
-    [cell.backgroundImageView sd_setImageWithURL:[NSURL URLWithString:[venue valueForKey:@"background_image"]] placeholderImage:nil];
+//    [cell.backgroundImageView sd_setImageWithURL:[NSURL URLWithString:[venue valueForKey:@"background_image"]] placeholderImage:nil];
     [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:[venue valueForKey:@"logo_image"]] placeholderImage:nil];
+    
+    [cell.backgroundImageView
+     sd_setImageWithURL:[NSURL URLWithString:[venue valueForKey:@"background_image"]]
+     placeholderImage:nil
+     completed:^(UIImage *image, NSError *error,
+                 SDImageCacheType cacheType, NSURL *imageURL) {
+         if (image && cacheType == SDImageCacheTypeNone) {
+             cell.backgroundImageView.alpha = 0.0;
+             [UIView animateWithDuration:1.0
+                              animations:^{
+                                  cell.backgroundImageView.alpha = 1.0;
+                              }];
+         }
+     }];
+
 
     
     return cell;
